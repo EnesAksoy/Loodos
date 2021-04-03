@@ -8,7 +8,7 @@ target 'Loodos' do
 pod 'Firebase'
 pod 'Firebase/Analytics'
 pod 'Firebase/RemoteConfig'
-
+pod 'Alamofire', '~> 4.7.2'
   # Pods for Loodos
 
 end
