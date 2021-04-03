@@ -23,6 +23,10 @@
 		8F70E3852618A2A800958C77 /* HomePageScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F70E3832618A2A800958C77 /* HomePageScreenViewController.swift */; };
 		8F70E3862618A2A800958C77 /* HomePageScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F70E3842618A2A800958C77 /* HomePageScreenViewController.xib */; };
 		8F70E38E2618A5F800958C77 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F70E38D2618A5F800958C77 /* LoadingView.swift */; };
+		8F70E3922618A95400958C77 /* LoodosLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F70E3912618A95400958C77 /* LoodosLabel.swift */; };
+		8F70E3962618A96A00958C77 /* LoodosNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F70E3952618A96A00958C77 /* LoodosNavigationItem.swift */; };
+		8F70E3992618A98000958C77 /* LoodosButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F70E3982618A98000958C77 /* LoodosButton.swift */; };
+		8F70E39C2618A99000958C77 /* LoodosTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F70E39B2618A99000958C77 /* LoodosTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,10 @@
 		8F70E3832618A2A800958C77 /* HomePageScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageScreenViewController.swift; sourceTree = "<group>"; };
 		8F70E3842618A2A800958C77 /* HomePageScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageScreenViewController.xib; sourceTree = "<group>"; };
 		8F70E38D2618A5F800958C77 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8F70E3912618A95400958C77 /* LoodosLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoodosLabel.swift; sourceTree = "<group>"; };
+		8F70E3952618A96A00958C77 /* LoodosNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoodosNavigationItem.swift; sourceTree = "<group>"; };
+		8F70E3982618A98000958C77 /* LoodosButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoodosButton.swift; sourceTree = "<group>"; };
+		8F70E39B2618A99000958C77 /* LoodosTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoodosTextField.swift; sourceTree = "<group>"; };
 		A73AEAB9055253E8B5505A04 /* Pods-Loodos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loodos.release.xcconfig"; path = "Target Support Files/Pods-Loodos/Pods-Loodos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +147,7 @@
 		8F70E34B26188BF600958C77 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				8F70E3902618A92D00958C77 /* Controls */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -235,6 +244,17 @@
 				8F70E3832618A2A800958C77 /* HomePageScreenViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8F70E3902618A92D00958C77 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				8F70E3912618A95400958C77 /* LoodosLabel.swift */,
+				8F70E3952618A96A00958C77 /* LoodosNavigationItem.swift */,
+				8F70E3982618A98000958C77 /* LoodosButton.swift */,
+				8F70E39B2618A99000958C77 /* LoodosTextField.swift */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 		931E4E20BF736B4F5B9C8E35 /* Pods */ = {
@@ -371,13 +391,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F70E3962618A96A00958C77 /* LoodosNavigationItem.swift in Sources */,
+				8F70E3992618A98000958C77 /* LoodosButton.swift in Sources */,
 				8F2116B72618891500442B25 /* AppDelegate.swift in Sources */,
 				8F70E365261895AB00958C77 /* SplashScreenViewController.swift in Sources */,
+				8F70E3922618A95400958C77 /* LoodosLabel.swift in Sources */,
 				8F70E3852618A2A800958C77 /* HomePageScreenViewController.swift in Sources */,
 				8F70E37B26189CDB00958C77 /* SplashScreenViewModelDelegate.swift in Sources */,
 				8F70E376261897E000958C77 /* UIViewControllerExtensions.swift in Sources */,
 				8F70E37F26189CF700958C77 /* SplashScreenViewModel.swift in Sources */,
 				8F70E369261896C900958C77 /* Reachability.swift in Sources */,
+				8F70E39C2618A99000958C77 /* LoodosTextField.swift in Sources */,
 				8F2116B92618891500442B25 /* SceneDelegate.swift in Sources */,
 				8F70E38E2618A5F800958C77 /* LoadingView.swift in Sources */,
 			);
