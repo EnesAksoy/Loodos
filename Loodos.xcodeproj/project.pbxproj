@@ -37,6 +37,7 @@
 		8F70E4042618E04400958C77 /* DetailPageScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F70E4022618E04300958C77 /* DetailPageScreenViewController.swift */; };
 		8F70E4052618E04400958C77 /* DetailPageScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F70E4032618E04400958C77 /* DetailPageScreenViewController.xib */; };
 		8F70E4092618E2B300958C77 /* ObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F70E4082618E2B300958C77 /* ObjectStore.swift */; };
+		8FAA81D62618F72F00E43804 /* DetailPageScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAA81D52618F72F00E43804 /* DetailPageScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		8F70E4022618E04300958C77 /* DetailPageScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageScreenViewController.swift; sourceTree = "<group>"; };
 		8F70E4032618E04400958C77 /* DetailPageScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailPageScreenViewController.xib; sourceTree = "<group>"; };
 		8F70E4082618E2B300958C77 /* ObjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectStore.swift; sourceTree = "<group>"; };
+		8FAA81D52618F72F00E43804 /* DetailPageScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageScreenViewModel.swift; sourceTree = "<group>"; };
 		A73AEAB9055253E8B5505A04 /* Pods-Loodos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loodos.release.xcconfig"; path = "Target Support Files/Pods-Loodos/Pods-Loodos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -322,6 +324,7 @@
 		8F70E4002618E01300958C77 /* DetailPageScreen */ = {
 			isa = PBXGroup;
 			children = (
+				8FAA81D42618F71400E43804 /* ViewModel */,
 				8F70E4012618E02500958C77 /* ViewController */,
 			);
 			path = DetailPageScreen;
@@ -333,6 +336,14 @@
 				8F70E4022618E04300958C77 /* DetailPageScreenViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8FAA81D42618F71400E43804 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8FAA81D52618F72F00E43804 /* DetailPageScreenViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		931E4E20BF736B4F5B9C8E35 /* Pods */ = {
@@ -481,6 +492,7 @@
 				8F70E3922618A95400958C77 /* LoodosLabel.swift in Sources */,
 				8F70E3CA2618BB3C00958C77 /* HomePageScreenTableViewCell.swift in Sources */,
 				8F70E3BF2618B54B00958C77 /* HomePageViewModelDelegate.swift in Sources */,
+				8FAA81D62618F72F00E43804 /* DetailPageScreenViewModel.swift in Sources */,
 				8F70E3852618A2A800958C77 /* HomePageScreenViewController.swift in Sources */,
 				8F70E37B26189CDB00958C77 /* SplashScreenViewModelDelegate.swift in Sources */,
 				8F70E376261897E000958C77 /* UIViewControllerExtensions.swift in Sources */,
