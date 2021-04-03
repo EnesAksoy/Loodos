@@ -23,6 +23,7 @@ class HomePageViewModel: NSObject {
     }
     
     func serviceCallMethod(search: String) {
+        LoadingView.showLoadingView()
         let searchText = search.replacingOccurrences(of: " ", with: "")
         apiService.apiToSearchData(search: searchText) { (searchModel, error)  in
             self.delegate?.updateView(searchModel, errorText: error)
