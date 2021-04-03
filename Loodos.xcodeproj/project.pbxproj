@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		8F2116BE2618891500442B25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2116BC2618891500442B25 /* Main.storyboard */; };
 		8F2116C02618891700442B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2116BF2618891700442B25 /* Assets.xcassets */; };
 		8F2116C32618891700442B25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2116C12618891700442B25 /* LaunchScreen.storyboard */; };
+		8F70E36026188FFC00958C77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F70E35F26188FFC00958C77 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		8F2116BF2618891700442B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F2116C22618891700442B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F2116C42618891700442B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F70E35F26188FFC00958C77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A73AEAB9055253E8B5505A04 /* Pods-Loodos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loodos.release.xcconfig"; path = "Target Support Files/Pods-Loodos/Pods-Loodos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 				8F2116BF2618891700442B25 /* Assets.xcassets */,
 				8F2116C12618891700442B25 /* LaunchScreen.storyboard */,
 				8F2116C42618891700442B25 /* Info.plist */,
+				8F70E35F26188FFC00958C77 /* GoogleService-Info.plist */,
 			);
 			path = Loodos;
 			sourceTree = "<group>";
@@ -152,7 +155,6 @@
 				2131522869799338ECC7FB18 /* Pods-Loodos.debug.xcconfig */,
 				A73AEAB9055253E8B5505A04 /* Pods-Loodos.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -224,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F2116C32618891700442B25 /* LaunchScreen.storyboard in Resources */,
+				8F70E36026188FFC00958C77 /* GoogleService-Info.plist in Resources */,
 				8F2116C02618891700442B25 /* Assets.xcassets in Resources */,
 				8F2116BE2618891500442B25 /* Main.storyboard in Resources */,
 			);
