@@ -13,6 +13,7 @@ class SplashScreenViewController: UIViewController {
     
     private let connectionMessageLocalizationKey = "splashScreen.connectionMessage"
     private let errorTitleLocalizationKey = "messageErrorTitle"
+    private let titleLoclizableKey = "homePageScreen.title"
     
     // MARK: - Outlets
     @IBOutlet weak var titleLabel: UILabel!
@@ -35,6 +36,13 @@ class SplashScreenViewController: UIViewController {
         self.viewModel = SplashScreenViewModel()
         self.viewModel.delegate = self
     }
+    
+    private func pushViewControllerMethod() {
+        let viewController = HomePageScreenViewController()
+        viewController.navigationItem.setHidesBackButton(true, animated: true)
+        viewController.title = self.localizableGetString(forkey: self.titleLoclizableKey)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }
 
 // MARK: - SplashScreenViewModelDelegate Methods
@@ -44,7 +52,7 @@ extension SplashScreenViewController: SplashScreenViewModelDelegate {
         DispatchQueue.main.async {
             self.titleLabel.text = value
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3)) {
-                // push method
+                self.pushViewControllerMethod()
             }
         }
     }
