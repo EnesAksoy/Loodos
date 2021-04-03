@@ -18,3 +18,5 @@
 "homePageScreen.title" = "Home Page";
 "homePageScreen.searchButtonKey" = "Search";
 "homePageScreen.searchTextFieldKey" = "Movies Search";
+"homePageScreen.warningText" = "Please write the movie you would like to search.";
+"homePageScreen.noMovieText" = "No movie found.";
