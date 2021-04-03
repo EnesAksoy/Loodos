@@ -39,7 +39,6 @@ class SplashScreenViewController: UIViewController {
     
     private func pushViewControllerMethod() {
         let viewController = HomePageScreenViewController()
-        viewController.navigationItem.setHidesBackButton(true, animated: true)
         viewController.title = self.localizableGetString(forkey: self.titleLoclizableKey)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
