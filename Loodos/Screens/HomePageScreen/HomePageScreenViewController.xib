@@ -30,7 +30,7 @@
                         <action selector="searchButtonClicked:" destination="-1" eventType="touchUpInside" id="Kds-eb-lle"/>
                     </connections>
                 </button>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foP-v4-XN7" customClass="LoodosTextField" customModule="Loodos" customModuleProvider="target">
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foP-v4-XN7" customClass="LoodosTextField" customModule="Loodos" customModuleProvider="target">
                     <rect key="frame" x="8" y="24" width="297" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>

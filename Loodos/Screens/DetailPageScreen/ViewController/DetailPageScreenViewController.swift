@@ -9,8 +9,17 @@ import UIKit
 
 class DetailPageScreenViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    // MARK: - Outlets
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var imdbLabel: UILabel!
+    @IBOutlet weak var yearLabel: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!
+    
+    
+    
+    override func viewDidLoad() {        super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
