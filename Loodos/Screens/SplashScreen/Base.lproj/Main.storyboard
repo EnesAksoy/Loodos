@@ -22,10 +22,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="GNt-QR-RHF">
+                                <rect key="frame" x="152.5" y="25" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="0Lx-di-4G1"/>
+                                    <constraint firstAttribute="width" constant="70" id="9II-lF-MbP"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="GNt-QR-RHF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="2g4-Kg-IfA"/>
+                            <constraint firstItem="GNt-QR-RHF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WSI-vp-Jso"/>
                             <constraint firstItem="iAD-lf-M2Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cWa-zF-F3D"/>
                             <constraint firstItem="iAD-lf-M2Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fhI-3X-pGO"/>
                         </constraints>
@@ -37,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942.02898550724649" y="77.678571428571431"/>
+            <point key="canvasLocation" x="941.60000000000002" y="76.911544227886068"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WNB-ei-V7d">
@@ -59,6 +68,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="splash" width="250" height="250"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

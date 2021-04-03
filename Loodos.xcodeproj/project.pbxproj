@@ -189,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				8F70E4002618E01300958C77 /* DetailPageScreen */,
-				8F70E4032618E04400958C77 /* DetailPageScreenViewController.xib */,
 				8F70E3812618A27A00958C77 /* HomePageScreen */,
 				8F70E3622618943C00958C77 /* SplashScreen */,
 			);
@@ -326,6 +325,7 @@
 			children = (
 				8FAA81D42618F71400E43804 /* ViewModel */,
 				8F70E4012618E02500958C77 /* ViewController */,
+				8F70E4032618E04400958C77 /* DetailPageScreenViewController.xib */,
 			);
 			path = DetailPageScreen;
 			sourceTree = "<group>";
