@@ -14,3 +14,5 @@
 /* SplashScreen */
 "splashScreen.connectionMessage" = "Please check your internet connection.";
 
+/* HomePageScreen */
+"homePageScreen.title" = "Home Page Screen";
