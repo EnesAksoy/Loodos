@@ -9,6 +9,7 @@ pod 'Firebase'
 pod 'Firebase/Analytics'
 pod 'Firebase/RemoteConfig'
 pod 'Alamofire', '~> 4.7.2'
+pod 'Kingfisher', '~> 5.0'
   # Pods for Loodos
 
 end
