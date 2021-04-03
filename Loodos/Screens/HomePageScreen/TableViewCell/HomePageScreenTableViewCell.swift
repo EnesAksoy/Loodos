@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomePageScreenTableViewCell: UITableViewCell {
     
@@ -33,7 +34,8 @@ class HomePageScreenTableViewCell: UITableViewCell {
     }
     
     func configureCell(imageViewUrl: String, titleText: String, imdbText: String, yearText: String, typeText: String) {
-        
+        self.posterImageView.kf.setImage(with: URL(string: imageViewUrl))
+        self.posterImageView.kf.indicatorType = .activity
         self.titleLabel.text = titleText
         self.imdbLabel.text = imdbText
         self.yearLabel.text = yearText
