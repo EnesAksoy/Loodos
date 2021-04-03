@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6726C7C4687FEAE3F122D9C0 /* Pods_Loodos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B561CF6C93DBAB27B44DB7C /* Pods_Loodos.framework */; };
 		8F2116B72618891500442B25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2116B62618891500442B25 /* AppDelegate.swift */; };
 		8F2116B92618891500442B25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2116B82618891500442B25 /* SceneDelegate.swift */; };
 		8F2116BB2618891500442B25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2116BA2618891500442B25 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B561CF6C93DBAB27B44DB7C /* Pods_Loodos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loodos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2131522869799338ECC7FB18 /* Pods-Loodos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loodos.debug.xcconfig"; path = "Target Support Files/Pods-Loodos/Pods-Loodos.debug.xcconfig"; sourceTree = "<group>"; };
 		8F2116B32618891500442B25 /* Loodos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loodos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F2116B62618891500442B25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F2116B82618891500442B25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		8F2116BF2618891700442B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F2116C22618891700442B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F2116C42618891700442B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A73AEAB9055253E8B5505A04 /* Pods-Loodos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loodos.release.xcconfig"; path = "Target Support Files/Pods-Loodos/Pods-Loodos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6726C7C4687FEAE3F122D9C0 /* Pods_Loodos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				8F2116B52618891500442B25 /* Loodos */,
 				8F2116B42618891500442B25 /* Products */,
+				931E4E20BF736B4F5B9C8E35 /* Pods */,
+				F716DD87C5227C8C609717DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +146,24 @@
 			path = Delegate;
 			sourceTree = "<group>";
 		};
+		931E4E20BF736B4F5B9C8E35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2131522869799338ECC7FB18 /* Pods-Loodos.debug.xcconfig */,
+				A73AEAB9055253E8B5505A04 /* Pods-Loodos.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F716DD87C5227C8C609717DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B561CF6C93DBAB27B44DB7C /* Pods_Loodos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F2116C72618891700442B25 /* Build configuration list for PBXNativeTarget "Loodos" */;
 			buildPhases = (
+				4EC2EA1153A9200C8C8F971D /* [CP] Check Pods Manifest.lock */,
 				8F2116AF2618891500442B25 /* Sources */,
 				8F2116B02618891500442B25 /* Frameworks */,
 				8F2116B12618891500442B25 /* Resources */,
+				F2F782955A972F5004EC9BDC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,6 +230,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EC2EA1153A9200C8C8F971D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Loodos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2F782955A972F5004EC9BDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loodos/Pods-Loodos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loodos/Pods-Loodos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Loodos/Pods-Loodos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F2116AF2618891500442B25 /* Sources */ = {
@@ -355,6 +424,7 @@
 		};
 		8F2116C82618891700442B25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2131522869799338ECC7FB18 /* Pods-Loodos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -374,6 +444,7 @@
 		};
 		8F2116C92618891700442B25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A73AEAB9055253E8B5505A04 /* Pods-Loodos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
