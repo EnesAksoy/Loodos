@@ -23,7 +23,7 @@ class APIService: NSObject {
         
         Alamofire.request(baseUrl, method: .get, parameters: parameters).response { (response) in
             guard let data = response.data else {
-                completion(nil, response.error?.localizedDescription ?? "nil data")
+                completion(nil, response.error?.localizedDescription ?? "")
                 return
             }
             do {
