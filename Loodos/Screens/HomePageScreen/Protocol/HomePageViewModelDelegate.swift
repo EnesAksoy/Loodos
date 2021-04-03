@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol HomePageViewModelDelegate {
+    func updateView(_ searchModel: [SearchModel]?, errorText: String)
+}
