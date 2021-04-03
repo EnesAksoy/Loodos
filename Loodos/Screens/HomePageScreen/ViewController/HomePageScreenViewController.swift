@@ -49,8 +49,6 @@ class HomePageScreenViewController: UIViewController {
         }
         self.viewModel.serviceCallMethod(search: self.searchTextField.text!)
     }
-    
-    
 }
 
     // MARK: - HomePageViewModelDelegate Extension Methods

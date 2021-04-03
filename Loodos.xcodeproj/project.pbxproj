@@ -34,7 +34,6 @@
 		8F70E3BF2618B54B00958C77 /* HomePageViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F70E3BE2618B54B00958C77 /* HomePageViewModelDelegate.swift */; };
 		8F70E3CA2618BB3C00958C77 /* HomePageScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F70E3C82618BB3C00958C77 /* HomePageScreenTableViewCell.swift */; };
 		8F70E3CB2618BB3C00958C77 /* HomePageScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F70E3C92618BB3C00958C77 /* HomePageScreenTableViewCell.xib */; };
-		8F70E3CF2618BEF000958C77 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F70E3CE2618BEF000958C77 /* ShadowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,7 +67,6 @@
 		8F70E3BE2618B54B00958C77 /* HomePageViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModelDelegate.swift; sourceTree = "<group>"; };
 		8F70E3C82618BB3C00958C77 /* HomePageScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageScreenTableViewCell.swift; sourceTree = "<group>"; };
 		8F70E3C92618BB3C00958C77 /* HomePageScreenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageScreenTableViewCell.xib; sourceTree = "<group>"; };
-		8F70E3CE2618BEF000958C77 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		A73AEAB9055253E8B5505A04 /* Pods-Loodos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loodos.release.xcconfig"; path = "Target Support Files/Pods-Loodos/Pods-Loodos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,7 +163,6 @@
 		8F70E34B26188BF600958C77 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				8F70E3CD2618BED800958C77 /* CustomView */,
 				8F70E3902618A92D00958C77 /* Controls */,
 			);
 			path = Presentation;
@@ -313,14 +310,6 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
-		8F70E3CD2618BED800958C77 /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-				8F70E3CE2618BEF000958C77 /* ShadowView.swift */,
-			);
-			path = CustomView;
-			sourceTree = "<group>";
-		};
 		931E4E20BF736B4F5B9C8E35 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,7 +449,6 @@
 				8F70E3BA2618B52800958C77 /* HomePageViewModel.swift in Sources */,
 				8F70E3992618A98000958C77 /* LoodosButton.swift in Sources */,
 				8F2116B72618891500442B25 /* AppDelegate.swift in Sources */,
-				8F70E3CF2618BEF000958C77 /* ShadowView.swift in Sources */,
 				8F70E3A62618ADA800958C77 /* SearchModel.swift in Sources */,
 				8F70E365261895AB00958C77 /* SplashScreenViewController.swift in Sources */,
 				8F70E3922618A95400958C77 /* LoodosLabel.swift in Sources */,

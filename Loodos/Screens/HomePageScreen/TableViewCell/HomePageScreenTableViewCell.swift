@@ -12,10 +12,12 @@ class HomePageScreenTableViewCell: UITableViewCell {
     
     // MARK: - Constans
     
-    private let notApplicableText = "N/A"
+    private let viewBorderWidth: CGFloat = 1
+    private let viewCornerRadius: CGFloat = 15
     
     // MARK: - Outlets
     
+    @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var posterImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imdbLabel: UILabel!
@@ -24,13 +26,13 @@ class HomePageScreenTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.cellView.layer.borderWidth = self.viewBorderWidth
+        self.cellView.layer.borderColor = UIColor.lightGray.cgColor
+        self.cellView.layer.cornerRadius = self.viewCornerRadius
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     func configureCell(imageViewUrl: String, titleText: String, imdbText: String, yearText: String, typeText: String) {
@@ -41,5 +43,4 @@ class HomePageScreenTableViewCell: UITableViewCell {
         self.yearLabel.text = yearText
         self.typeLabel.text = typeText
     }
-    
 }
