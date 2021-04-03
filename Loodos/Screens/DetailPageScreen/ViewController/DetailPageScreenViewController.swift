@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetailPageScreenViewController: UIViewController {
 
@@ -18,21 +19,25 @@ class DetailPageScreenViewController: UIViewController {
     @IBOutlet weak var typeLabel: UILabel!
     
     
+    // MARK: - Life Cycles
     
-    override func viewDidLoad() {        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationItem.setHidesBackButton(false, animated: true)
+        self.updateView()
+        
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func updateView() {
+        let searchModel = ObjectStore.shared.detailData
+        self.titleLabel.text = searchModel?.title
+        self.imdbLabel.text = searchModel?.imdbID
+        self.yearLabel.text = searchModel?.year
+        self.typeLabel.text = searchModel?.type
+        self.imageView.kf.setImage(with: URL(string: searchModel?.poster ?? ""))
+        self.imageView.kf.indicatorType = .activity
     }
-    */
+
+   
 
 }
