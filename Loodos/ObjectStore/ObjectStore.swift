@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+class ObjectStore {
+    static let shared = ObjectStore()
+    public var detailData: SearchModel?
+}
