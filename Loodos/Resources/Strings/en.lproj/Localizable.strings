@@ -9,4 +9,8 @@
 /* General */
 
 "ok_button_text" = "OK";
+"messageErrorTitle" = "ERROR";
+
+/* SplashScreen */
+"splashScreen.connectionMessage" = "Please check your internet connection.";
 
