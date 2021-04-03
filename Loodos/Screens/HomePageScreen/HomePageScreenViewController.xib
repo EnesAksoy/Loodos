@@ -20,14 +20,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foP-v4-XN7" customClass="LoodosTextField" customModule="Loodos" customModuleProvider="target">
-                    <rect key="frame" x="8" y="24" width="297" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="homePageScreen.searchTextFieldKey"/>
-                    </userDefinedRuntimeAttributes>
-                </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8a-vg-bfR" customClass="LoodosButton" customModule="Loodos" customModuleProvider="target">
                     <rect key="frame" x="321" y="24" width="46" height="30"/>
                     <state key="normal" title="Button"/>
@@ -38,7 +30,15 @@
                         <action selector="searchButtonClicked:" destination="-1" eventType="touchUpInside" id="Kds-eb-lle"/>
                     </connections>
                 </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MAL-s6-Pr9">
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foP-v4-XN7" customClass="LoodosTextField" customModule="Loodos" customModuleProvider="target">
+                    <rect key="frame" x="8" y="24" width="297" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="homePageScreen.searchTextFieldKey"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MAL-s6-Pr9">
                     <rect key="frame" x="0.0" y="70" width="375" height="589"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>

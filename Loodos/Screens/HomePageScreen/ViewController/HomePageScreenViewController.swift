@@ -9,6 +9,13 @@ import UIKit
 
 class HomePageScreenViewController: UIViewController {
     
+    //MARK: - Constants
+    
+    private let tableViewCellId = "HomePageScreenTableViewCell"
+    private let messageErrorTitleLocalizableKey = "messageErrorTitle"
+    private let warningTextLocalizableKey = "homePageScreen.warningText"
+    private let noMovieText = "homePageScreen.noMovieText"
+    
     // MARK: - Outlets
     
     @IBOutlet weak var searchTextField: LoodosTextField!
@@ -25,12 +32,21 @@ class HomePageScreenViewController: UIViewController {
         super.viewDidLoad()
         self.viewModel = HomePageViewModel()
         self.viewModel.delegate = self
-        // Do any additional setup after loading the view.
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.tableView.register(UINib(nibName: self.tableViewCellId, bundle: nil), forCellReuseIdentifier: self.tableViewCellId)
+        self.tableView.reloadData()
     }
 
     // MARK: - Actions
     
     @IBAction func searchButtonClicked(_ sender: Any) {
+        self.view.endEditing(true)
+        if self.searchTextField.text == "" {
+            self.createAlert(message: self.localizableGetString(forkey: warningTextLocalizableKey), title: self.localizableGetString(forkey: messageErrorTitleLocalizableKey))
+            return
+        }
         self.viewModel.serviceCallMethod(search: self.searchTextField.text!)
     }
     
@@ -44,17 +60,17 @@ extension HomePageScreenViewController: HomePageViewModelDelegate {
         self.searchModel.removeAll()
         if errorText != "" {
             LoadingView.removeLoadingView()
-            //creat Alert
+            self.tableView.reloadData()
+            self.createAlert(message: errorText, title: self.localizableGetString(forkey: self.messageErrorTitleLocalizableKey))
             return
         }
         if let searchModel = searchModel {
             self.searchModel = searchModel
         }else {
-            // creat nil data
+            self.createAlert(message: self.localizableGetString(forkey: self.noMovieText), title: self.localizableGetString(forkey: self.messageErrorTitleLocalizableKey))
         }
-        
         DispatchQueue.main.async {
-            // tableview reload data
+            self.tableView.reloadData()
         }
         LoadingView.removeLoadingView()
     }
