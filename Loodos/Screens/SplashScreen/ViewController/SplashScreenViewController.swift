@@ -13,7 +13,14 @@ class SplashScreenViewController: UIViewController {
     
     private let connectionMessageLocalizationKey = "splashScreen.connectionMessage"
     private let errorTitleLocalizationKey = "messageErrorTitle"
+    
+    // MARK: - Outlets
+    @IBOutlet weak var titleLabel: UILabel!
+    
 
+    // MARK: - Properties
+    
+    private var viewModel: SplashScreenViewModel!
     
     // MARK: - Life Cycles
     
@@ -25,7 +32,20 @@ class SplashScreenViewController: UIViewController {
             return
         }
         
+        self.viewModel = SplashScreenViewModel()
+        self.viewModel.delegate = self
     }
-    
+}
 
+// MARK: - SplashScreenViewModelDelegate Methods
+
+extension SplashScreenViewController: SplashScreenViewModelDelegate {
+    func updateView(_ value: String) {
+        DispatchQueue.main.async {
+            self.titleLabel.text = value
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3)) {
+                // push method
+            }
+        }
+    }
 }
