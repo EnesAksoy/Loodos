@@ -30,7 +30,7 @@
                             <constraint firstItem="iAD-lf-M2Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fhI-3X-pGO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="XgH-gZ-uOz"/>
+                    <navigationItem key="navigationItem" id="XgH-gZ-uOz" customClass="LoodosNavigationItem" customModule="Loodos" customModuleProvider="target"/>
                     <connections>
                         <outlet property="titleLabel" destination="iAD-lf-M2Q" id="qI3-hP-0Iv"/>
                     </connections>

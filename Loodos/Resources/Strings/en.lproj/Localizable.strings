@@ -16,3 +16,5 @@
 
 /* HomePageScreen */
 "homePageScreen.title" = "Home Page";
+"homePageScreen.searchButtonKey" = "Search";
+"homePageScreen.searchTextFieldKey" = "Movies Search";
