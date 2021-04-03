@@ -75,3 +75,22 @@ extension HomePageScreenViewController: HomePageViewModelDelegate {
         LoadingView.removeLoadingView()
     }
 }
+
+    // MARK: - UITableViewDataSource, UITableViewDelegate Methods
+
+extension HomePageScreenViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        self.searchModel.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.tableViewCellId, for: indexPath) as! HomePageScreenTableViewCell
+        cell.configureCell(imageViewUrl: self.searchModel[indexPath.row].poster,
+                                               titleText: self.searchModel[indexPath.row].title,
+                                               imdbText: self.searchModel[indexPath.row].imdbID,
+                                               yearText: self.searchModel[indexPath.row].year,
+                                               typeText: self.searchModel[indexPath.row].type)
+        return cell
+    }
+}
