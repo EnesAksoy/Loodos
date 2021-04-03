@@ -38,6 +38,10 @@ class HomePageScreenViewController: UIViewController {
         self.tableView.register(UINib(nibName: self.tableViewCellId, bundle: nil), forCellReuseIdentifier: self.tableViewCellId)
         self.tableView.reloadData()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationItem.setHidesBackButton(true, animated: true)
+    }
 
     // MARK: - Actions
     
@@ -90,5 +94,12 @@ extension HomePageScreenViewController: UITableViewDataSource, UITableViewDelega
                                                yearText: self.searchModel[indexPath.row].year,
                                                typeText: self.searchModel[indexPath.row].type)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        ObjectStore.shared.detailData = self.searchModel[indexPath.row]
+        let vc = DetailPageScreenViewController()
+        vc.title = self.searchModel[indexPath.row].title
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
