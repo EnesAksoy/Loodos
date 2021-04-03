@@ -15,7 +15,7 @@ class LoadingView {
         mainView.backgroundColor = .clear
         let darkView = UIView(frame: mainView.frame)
         darkView.backgroundColor = UIColor.black
-        darkView.alpha = 0.7
+        darkView.alpha = 0.8
         mainView.addSubview(darkView)
         let spinnerView = UIActivityIndicatorView(style: .large)
         spinnerView.translatesAutoresizingMaskIntoConstraints = false
@@ -31,7 +31,6 @@ class LoadingView {
             }else {
                 (UIApplication.shared.delegate as? AppDelegate)?.window?.addSubview(mainView)
             }
-            
         }
     }
     
