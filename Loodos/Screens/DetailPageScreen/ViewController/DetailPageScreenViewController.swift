@@ -18,18 +18,23 @@ class DetailPageScreenViewController: UIViewController {
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     
+    // MARK: - Properties
+    
+    private var viewModel: DetailPageScreenViewModel!
     
     // MARK: - Life Cycles
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.setHidesBackButton(false, animated: true)
-        self.updateView()
+        let searchModel = ObjectStore.shared.detailData
+        self.viewModel = DetailPageScreenViewModel()
+        self.viewModel.firebaseAnalytics(detailData: searchModel)
+        self.updateView(searchModel: searchModel)
         
     }
 
-    private func updateView() {
-        let searchModel = ObjectStore.shared.detailData
+    private func updateView(searchModel: SearchModel?) {
         self.titleLabel.text = searchModel?.title
         self.imdbLabel.text = searchModel?.imdbID
         self.yearLabel.text = searchModel?.year
@@ -37,7 +42,4 @@ class DetailPageScreenViewController: UIViewController {
         self.imageView.kf.setImage(with: URL(string: searchModel?.poster ?? ""))
         self.imageView.kf.indicatorType = .activity
     }
-
-   
-
 }
