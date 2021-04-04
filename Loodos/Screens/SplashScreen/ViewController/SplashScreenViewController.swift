@@ -18,7 +18,6 @@ class SplashScreenViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var titleLabel: UILabel!
     
-
     // MARK: - Properties
     
     private var viewModel: SplashScreenViewModel!
@@ -32,14 +31,17 @@ class SplashScreenViewController: UIViewController {
             self.createAlert(message: self.localizableGetString(forkey: connectionMessageLocalizationKey), title: self.localizableGetString(forkey: errorTitleLocalizationKey))
             return
         }
-        
         self.viewModel = SplashScreenViewModel()
         self.viewModel.delegate = self
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
+    
+    // MARK: - Funtions
     
     private func pushViewControllerMethod() {
         let viewController = HomePageScreenViewController()
         viewController.title = self.localizableGetString(forkey: self.titleLoclizableKey)
+        self.pushAnimation(type: .fromBottom)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

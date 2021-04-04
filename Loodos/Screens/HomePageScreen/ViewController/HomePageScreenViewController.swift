@@ -40,6 +40,7 @@ class HomePageScreenViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: true)
         navigationItem.setHidesBackButton(true, animated: true)
     }
 
@@ -100,6 +101,7 @@ extension HomePageScreenViewController: UITableViewDataSource, UITableViewDelega
         ObjectStore.shared.detailData = self.searchModel[indexPath.row]
         let vc = DetailPageScreenViewController()
         vc.title = self.searchModel[indexPath.row].title
+        self.pushAnimation(type: .fromTop)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
