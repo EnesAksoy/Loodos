@@ -15,9 +15,10 @@ class LoadingView {
         mainView.backgroundColor = .clear
         let darkView = UIView(frame: mainView.frame)
         darkView.backgroundColor = UIColor.black
-        darkView.alpha = 0.8
+        darkView.alpha = 0.6
         mainView.addSubview(darkView)
         let spinnerView = UIActivityIndicatorView(style: .large)
+        spinnerView.color = .white
         spinnerView.translatesAutoresizingMaskIntoConstraints = false
         mainView.addSubview(spinnerView)
         spinnerView.centerXAnchor.constraint(equalTo: mainView.centerXAnchor).isActive = true
